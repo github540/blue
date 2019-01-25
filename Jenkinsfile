@@ -1,14 +1,14 @@
 pipeline {
-  agent none
+  agent any
   stages {
-    stage('Buzz  Buzz') {
+    stage('Buzz') {
       steps {
-        echo 'Created a new pipeline '
+        echo 'This is Buzz'
       }
     }
-    stage('Bees Bees ') {
+    stage('2nd stage') {
       steps {
-        echo 'Buzz Bees, Buzz '
+        echo 'This is 2nd'
       }
     }
   }
