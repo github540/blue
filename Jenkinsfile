@@ -6,23 +6,9 @@ pipeline {
         echo 'Created a new pipeline '
       }
     }
-    stage('Buzz Buzz') {
-      parallel {
-        stage('Bees Bees ') {
-          steps {
-            echo 'Buzz Bees, Buzz '
-          }
-        }
-        stage('Bees new') {
-          steps {
-            echo 'Bees Buzzing'
-          }
-        }
-      }
-    }
-    stage('prod') {
+    stage('Bees Bees ') {
       steps {
-        echo 'this is prod'
+        echo 'Buzz Bees, Buzz '
       }
     }
   }
